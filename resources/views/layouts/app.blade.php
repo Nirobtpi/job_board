@@ -39,7 +39,7 @@
         <header class="site-navbar mt-3">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="site-logo col-4" style="z-index: 666"><a href="{{ url('/') }}">JobBoard</a></div>
+                    <div class="site-logo col-2" style="z-index: 666"><a href="{{ url('/') }}">JobBoard</a></div>
                     <nav class="mx-auto site-navigation">
                         <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
                             <li style="padding-left: 250px;"><a href="index.html" class="nav-link active">Home</a></li>
@@ -66,7 +66,7 @@
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                        document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 

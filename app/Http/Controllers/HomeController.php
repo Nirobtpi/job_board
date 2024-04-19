@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\job\Customjob;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +24,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        // $user=Auth::user()->id;
+        $jobs=Customjob::get()->take(5);
+        $totaljob=Customjob::count();
+        return view('home', compact('jobs','totaljob'));
     }
 }
